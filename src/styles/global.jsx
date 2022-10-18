@@ -2,6 +2,7 @@ import React from 'react'
 import { Global, css } from '@emotion/react'
 
 import { mq } from './media'
+import { styled } from './theme'
 
 const style = (theme) => css`
   *,
@@ -41,6 +42,10 @@ const style = (theme) => css`
 
     padding: 0;
     margin: 0;
+  }
+
+  main {
+    margin-top: ${theme.heights.navbar}px;
   }
 
   button {
@@ -120,3 +125,7 @@ const style = (theme) => css`
 const GlobalStyles = (props) => <Global styles={style} {...props} />
 
 export { GlobalStyles, style }
+
+export const SectionContainer = styled.section`
+  padding: 50px 20px;
+`

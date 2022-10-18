@@ -1,10 +1,11 @@
 import emotionStyled from '@emotion/styled'
 
 import colors from './colors'
+import { breakpoints } from './media'
 
 const heights = {
-  navbar: 6,
-  footer: 6,
+  navbar: 60,
+  footer: 60,
 }
 
 const zIndex = {
@@ -20,6 +21,7 @@ export const theme = {
   colors,
   heights,
   zIndex,
+  breakpoints,
 }
 
 export const styled = emotionStyled
